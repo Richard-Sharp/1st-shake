@@ -15,22 +15,14 @@ namespace Snake
             p1.x = 1;
             p1.x = 3;
             p1.sym = '*';
-            Draw(p1.x, p1.y, p1.sym);
+            p1.Draw();
 
-           /* int x1 = 1;
-            int y1 = 3;
-            char sym1 = '#';
-            Draw(x1, y1, sym1);
-            int x2 = 3;
-            int y2 = 5;
-            char sym2 = '*';
-            Draw(x2, y2, sym2);*/
+            Point1 p2 = new Point1();
+            p2.x = 4;
+            p2.x = 2;
+            p2.sym = '#';
+            p2.Draw();
             Console.ReadLine();
-        }
-        static void Draw(int x, int y, char sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine(sym);
-        }
+          }
         }
     }
